@@ -18,3 +18,6 @@ let g:ctrlp_custom_ignore = {
 let g:ctrlp_map = ',p'
 let g:ctrlp_cmd = 'CtrlPMixed'
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+set backup
+set backupdir=~/.vim/backup
+set directory=~/.vim/tmp
