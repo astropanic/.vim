@@ -1,12 +1,14 @@
-syntax on
 set nocompatible
+syntax on
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'kien/ctrlp.vim'
 call vundle#end()
-filetype plugin indent on
+filetype on
+filetype plugin on
+filetype indent on
 set shell=/bin/bash
 let mapleader=","
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
