@@ -5,6 +5,8 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'kien/ctrlp.vim'
+Plugin 'tpope/vim-rails'
+Plugin 'vim-ruby/vim-ruby'
 call vundle#end()
 filetype on
 filetype plugin on
@@ -23,3 +25,6 @@ nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 set backup
 set backupdir=~/.vim/backup
 set directory=~/.vim/tmp
+set expandtab
+set tabstop=2 shiftwidth=2 softtabstop=2
+set autoindent
