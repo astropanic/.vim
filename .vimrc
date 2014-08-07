@@ -8,6 +8,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-rails'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-vividchalk'
 call vundle#end()
 filetype on
 filetype plugin on
@@ -30,3 +31,4 @@ set expandtab
 set tabstop=2 shiftwidth=2 softtabstop=2
 set autoindent
 set nu
+color vividchalk
