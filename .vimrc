@@ -9,6 +9,7 @@ Plugin 'tpope/vim-rails'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-vividchalk'
+Plugin 'rking/ag.vim'
 call vundle#end()
 filetype on
 filetype plugin on
