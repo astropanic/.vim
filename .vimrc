@@ -39,3 +39,14 @@ set hlsearch
 set viminfo='100,f1
 set ignorecase
 set smartcase
+
+set grepprg=ag\ --nogroup\ --nocolor
+let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
+      \ --ignore .git
+      \ --ignore .svn
+      \ --ignore .hg
+      \ --ignore .DS_Store
+      \ --ignore "**/*.pyc"
+      \ -g ""'
+let g:ctrlp_use_caching = 0
+nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
