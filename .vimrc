@@ -7,6 +7,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-rails'
 Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-fugitive'
 call vundle#end()
 filetype on
 filetype plugin on
