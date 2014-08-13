@@ -11,6 +11,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-vividchalk'
 Plugin 'rking/ag.vim'
 Plugin 'bling/vim-airline'
+Plugin 'slim-template/vim-slim'
 call vundle#end()
 filetype on
 filetype plugin on
