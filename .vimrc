@@ -10,6 +10,7 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-vividchalk'
 Plugin 'rking/ag.vim'
+Plugin 'bling/vim-airline'
 call vundle#end()
 filetype on
 filetype plugin on
@@ -50,3 +51,4 @@ let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
       \ -g ""'
 let g:ctrlp_use_caching = 0
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
+let g:airline#extensions#tabline#enabled = 1
