@@ -12,6 +12,10 @@ Plugin 'tpope/vim-vividchalk'
 Plugin 'rking/ag.vim'
 Plugin 'bling/vim-airline'
 Plugin 'slim-template/vim-slim'
+Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'bogado/file-line'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'Lokaltog/vim-easymotion'
 call vundle#end()
 filetype on
 filetype plugin on
@@ -54,3 +58,7 @@ let g:ctrlp_use_caching = 0
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 let g:airline#extensions#tabline#enabled = 1
 set laststatus=2
+map  / <Plug>(easymotion-sn)
+omap / <Plug>(easymotion-tn)
+map  n <Plug>(easymotion-next)
+map  N <Plug>(easymotion-prev)
