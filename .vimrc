@@ -16,12 +16,18 @@ Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'bogado/file-line'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'Lokaltog/vim-easymotion'
+Plugin 'honza/dockerfile.vim'
+Plugin 'pangloss/vim-javascript'
+Plugin 'othree/html5.vim'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+Plugin 'Valloric/YouCompleteMe'
 call vundle#end()
 filetype on
 filetype plugin on
-filetype indent on
 set shell=/bin/bash
 let mapleader=","
+set laststatus=2
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn)$',
@@ -31,6 +37,7 @@ let g:ctrlp_custom_ignore = {
 let g:ctrlp_map = ',p'
 let g:ctrlp_cmd = 'CtrlPMixed'
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+set backspace=indent,eol,start
 set backup
 set backupdir=~/.vim/backup
 set directory=~/.vim/tmp
@@ -62,3 +69,4 @@ map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
 map  n <Plug>(easymotion-next)
 map  N <Plug>(easymotion-prev)
+au BufReadPost *.service set syntax=dosini
